@@ -59,7 +59,7 @@ Adversarial rewrite evaluation across 2,500 document samples drawn from the Peer
 
 | Rewrite Strategy | Flip-to-Human Rate | Token Edit Distance | Mean Dependency Length | Burstiness (CV) |
 | :--- | :---: | :---: | :---: | :---: |
-| **Raw AI Baseline (GPT-4o / Llama 3.1)** | 0.0% | 0.0% | 18.6 tokens | 0.22 *(flatline)* |
+| **Raw AI Baseline (Claude 3.5 Sonnet / DeepSeek-V3 / GPT-4o-latest)** | 0.0% | 0.0% | 18.6 tokens | 0.22 *(flatline)* |
 | **Generic Humanize Prompt ("write like human")** | 8.7% | 22.4% | 15.4 tokens | 0.31 *(rigid)* |
 | **Word-Blacklist Heuristics (Typical GitHub Repos)** | 14.1% | 26.8% | 14.9 tokens | 0.34 *(predictable)* |
 | **Humanizer (SAE + Cognitive Dual-Engine)** | **89.6% ～ 100.0%** | **<35.0%** | **7.2 tokens** | **0.58 *(natural)*** |
