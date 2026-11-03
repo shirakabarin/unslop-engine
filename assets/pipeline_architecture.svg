@@ -20,7 +20,7 @@
   <rect x="40" y="82" width="185" height="260" rx="6" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2"/>
   <path d="M 40 88 Q 40 82 46 82 L 219 82 Q 225 82 225 88 L 225 116 L 40 116 Z" fill="#f1f5f9"/>
   <text x="132" y="99" font-family="sans-serif" font-size="11" font-weight="700" fill="#334155" text-anchor="middle">Synthetic Text Input</text>
-  <text x="132" y="111" font-family="sans-serif" font-size="9.5" fill="#64748b" text-anchor="middle">Claude 3.5 Sonnet / DeepSeek-V3</text>
+  <text x="132" y="111" font-family="sans-serif" font-size="9.5" fill="#64748b" text-anchor="middle">GPT-6-Sol / GPT-5.6-Terra</text>
 
   <text x="54" y="138" font-family="sans-serif" font-size="10" font-weight="600" fill="#1e293b">Statistical Fingerprints:</text>
   <text x="54" y="156" font-family="sans-serif" font-size="10" fill="#64748b">• Double colons (**H:**:)</text>

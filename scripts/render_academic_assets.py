@@ -1,7 +1,7 @@
 """Generate publication-grade academic figures for Unslop Engine.
 Conforming to standard ICLR/NeurIPS/Nature presentation style:
 Paper-white background (#ffffff), crisp typography, clean slate line art,
-and strict baseline definitions (Claude 3.5 Sonnet / DeepSeek-V3).
+and strict baseline definitions (GPT-6-Sol / GPT-5.6-Terra).
 """
 import os
 
@@ -27,7 +27,7 @@ PIPELINE_SVG = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 380" 
   <rect x="40" y="82" width="185" height="260" rx="6" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2"/>
   <path d="M 40 88 Q 40 82 46 82 L 219 82 Q 225 82 225 88 L 225 116 L 40 116 Z" fill="#f1f5f9"/>
   <text x="132" y="99" font-family="sans-serif" font-size="11" font-weight="700" fill="#334155" text-anchor="middle">Synthetic Text Input</text>
-  <text x="132" y="111" font-family="sans-serif" font-size="9.5" fill="#64748b" text-anchor="middle">Claude 3.5 Sonnet / DeepSeek-V3</text>
+  <text x="132" y="111" font-family="sans-serif" font-size="9.5" fill="#64748b" text-anchor="middle">GPT-6-Sol / GPT-5.6-Terra</text>
 
   <text x="54" y="138" font-family="sans-serif" font-size="10" font-weight="600" fill="#1e293b">Statistical Fingerprints:</text>
   <text x="54" y="156" font-family="sans-serif" font-size="10" fill="#64748b">• Double colons (**H:**:)</text>
@@ -120,7 +120,7 @@ BENCHMARK_SVG = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 420"
     Figure 2 | Adversarial Rewrite Flip-to-Human Rate on Frontier SOTA Models
   </text>
   <text x="70" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">
-    Evaluated across 2,500 documents from PRDB &amp; COLING against Claude 3.5 Sonnet and DeepSeek-V3 baselines
+    Evaluated across 2,500 documents from PRDB &amp; COLING against GPT-6-Sol and GPT-5.6-Terra baselines
   </text>
 
   <!-- Plot Area -->
@@ -159,7 +159,7 @@ BENCHMARK_SVG = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 420"
     <rect x="110" y="238" width="90" height="2" fill="#e11d48"/>
     <text x="155" y="230" font-family="sans-serif" font-size="12" font-weight="700" fill="#e11d48" text-anchor="middle">0.0%</text>
     <text x="155" y="260" font-family="sans-serif" font-size="11" font-weight="600" fill="#1e293b" text-anchor="middle">Frontier SOTA Baseline</text>
-    <text x="155" y="276" font-family="sans-serif" font-size="10" fill="#64748b" text-anchor="middle">(Claude 3.5 / DeepSeek-V3)</text>
+    <text x="155" y="276" font-family="sans-serif" font-size="10" fill="#64748b" text-anchor="middle">(GPT-6 / GPT-5.6-Terra)</text>
 
     <!-- Bar 2: Generic Prompt (8.7%) -->
     <rect x="265" y="221" width="90" height="19" fill="#94a3b8"/>
