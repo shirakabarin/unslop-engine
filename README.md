@@ -20,7 +20,7 @@ Most existing AI text humanizers are toothless word-substitution heuristics. The
 Humanizer is an open-standard agent skill engineered for AI coding assistants and autonomous agents (Claude Code, Antigravity, Codex, Cursor). It couples mechanistic interpretability findings with psycholinguistic cognitive models to systematically restructure AI drafts into articulate, authentic human-written prose.
 
 <p align="center">
-  <img src="assets/architecture.svg" alt="Architecture Pipeline" width="100%">
+  <img src="assets/pipeline_architecture.svg" alt="Architecture Pipeline" width="100%">
 </p>
 
 ---
@@ -50,7 +50,7 @@ LLM post-training introduces extreme token-density compression, resulting in unn
 ## Empirical Benchmarks
 
 <p align="center">
-  <img src="assets/benchmark_comparison.svg" alt="Empirical Benchmark Comparison" width="100%">
+  <img src="assets/benchmark_eval.svg" alt="Empirical Benchmark Comparison" width="100%">
 </p>
 
 
@@ -59,7 +59,7 @@ Adversarial rewrite evaluation across 2,500 document samples drawn from the Peer
 
 | Rewrite Strategy | Flip-to-Human Rate | Token Edit Distance | Mean Dependency Length | Burstiness (CV) |
 | :--- | :---: | :---: | :---: | :---: |
-| **Raw AI Baseline (Claude 3.5 Sonnet / DeepSeek-V3 / GPT-4o-latest)** | 0.0% | 0.0% | 18.6 tokens | 0.22 *(flatline)* |
+| **Frontier SOTA Baseline (Claude 3.5 Sonnet / DeepSeek-V3)** | 0.0% | 0.0% | 18.6 tokens | 0.22 *(flatline)* |
 | **Generic Humanize Prompt ("write like human")** | 8.7% | 22.4% | 15.4 tokens | 0.31 *(rigid)* |
 | **Word-Blacklist Heuristics (Typical GitHub Repos)** | 14.1% | 26.8% | 14.9 tokens | 0.34 *(predictable)* |
 | **Humanizer (SAE + Cognitive Dual-Engine)** | **89.6% ～ 100.0%** | **<35.0%** | **7.2 tokens** | **0.58 *(natural)*** |

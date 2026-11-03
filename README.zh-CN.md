@@ -53,6 +53,12 @@ Humanizer 是一款面向主流编码智能体（Claude Code、Antigravity、Cod
 
 ---
 
+<p align="center">
+  <img src="assets/pipeline_architecture.svg" alt="技术架构管线" width="100%">
+</p>
+
+---
+
 ## 核心技术机制 (Approach)
 
 ### 1. 残差流 SAE 统计特征干预
@@ -78,7 +84,7 @@ Humanizer 是一款面向主流编码智能体（Claude Code、Antigravity、Cod
 ## 消融基准与实测数据 (Empirical Benchmarks)
 
 <p align="center">
-  <img src="assets/benchmark_comparison.svg" alt="Empirical Benchmark Comparison" width="100%">
+  <img src="assets/benchmark_eval.svg" alt="Empirical Benchmark Comparison" width="100%">
 </p>
 
 
@@ -87,7 +93,7 @@ Humanizer 是一款面向主流编码智能体（Claude Code、Antigravity、Cod
 
 | 改写策略 (Strategy) | 分类器判定翻转率 (Flip-to-Human Rate) | 词汇编辑距离 (Token Edit Distance) | 平均依存距离 (Mean Dep. Length) | 句长变异系数 (Burstiness CV) |
 | :--- | :---: | :---: | :---: | :---: |
-| **原始 AI 生成基线 (Claude 3.5 Sonnet / DeepSeek-V3 / GPT-4o-latest)** | 0.0% | 0.0% | 18.6 词 | 0.22 *(平庸死板)* |
+| **前沿 SOTA 模型基线 (Claude 3.5 Sonnet / DeepSeek-V3)** | 0.0% | 0.0% | 18.6 词 | 0.22 *(平庸死板)* |
 | **通用经验主义提示词 ("写得像人一点")** | 8.7% | 22.4% | 15.4 词 | 0.31 *(改动微弱)* |
 | **同类禁词表竞品 (GitHub 常见项目)** | 14.1% | 26.8% | 14.9 词 | 0.34 *(换汤不换药)* |
 | **Humanizer (SAE + 认知负荷双引擎)** | **89.6% ～ 100.0%** | **<35.0%** | **7.2 词** | **0.58 *(自然错落)*** |

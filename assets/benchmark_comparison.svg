@@ -1,31 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 420" width="100%" height="100%">
-  <!-- White/Transparent Publication Canvas -->
-  <rect width="840" height="420" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 420" width="100%" height="100%">
+  <!-- Clean Paper-White Canvas -->
+  <rect width="860" height="420" fill="#ffffff"/>
 
   <!-- Main Title & Caption (Academic Style) -->
   <text x="70" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#0f172a">
-    Figure 1 | Adversarial Rewrite Flip-to-Human Rate on Frontier LLMs
+    Figure 2 | Adversarial Rewrite Flip-to-Human Rate on Frontier SOTA Models
   </text>
   <text x="70" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">
-    Evaluated across 2,500 documents from PRDB &amp; COLING against state-of-the-art base generators (Claude 3.5 Sonnet, DeepSeek-V3, GPT-4o-latest)
+    Evaluated across 2,500 documents from PRDB &amp; COLING against Claude 3.5 Sonnet and DeepSeek-V3 baselines
   </text>
 
   <!-- Plot Area -->
   <g transform="translate(70, 80)">
     <!-- Y-Axis Grid Lines & Ticks -->
-    <line x1="60" y1="20" x2="720" y2="20" stroke="#f1f5f9" stroke-width="1"/>
+    <line x1="60" y1="20" x2="740" y2="20" stroke="#f1f5f9" stroke-width="1"/>
     <text x="50" y="24" font-family="sans-serif" font-size="11" fill="#64748b" text-anchor="end">100%</text>
 
-    <line x1="60" y1="75" x2="720" y2="75" stroke="#f1f5f9" stroke-width="1"/>
+    <line x1="60" y1="75" x2="740" y2="75" stroke="#f1f5f9" stroke-width="1"/>
     <text x="50" y="79" font-family="sans-serif" font-size="11" fill="#64748b" text-anchor="end">75%</text>
 
-    <line x1="60" y1="130" x2="720" y2="130" stroke="#f1f5f9" stroke-width="1"/>
+    <line x1="60" y1="130" x2="740" y2="130" stroke="#f1f5f9" stroke-width="1"/>
     <text x="50" y="134" font-family="sans-serif" font-size="11" fill="#64748b" text-anchor="end">50%</text>
 
-    <line x1="60" y1="185" x2="720" y2="185" stroke="#f1f5f9" stroke-width="1"/>
+    <line x1="60" y1="185" x2="740" y2="185" stroke="#f1f5f9" stroke-width="1"/>
     <text x="50" y="189" font-family="sans-serif" font-size="11" fill="#64748b" text-anchor="end">25%</text>
 
-    <line x1="60" y1="240" x2="720" y2="240" stroke="#334155" stroke-width="1.2"/>
+    <line x1="60" y1="240" x2="740" y2="240" stroke="#334155" stroke-width="1.2"/>
     <text x="50" y="244" font-family="sans-serif" font-size="11" fill="#64748b" text-anchor="end">0%</text>
 
     <!-- Y-Axis Label -->
@@ -43,31 +43,31 @@
     <line x1="56" y1="240" x2="60" y2="240" stroke="#334155" stroke-width="1.2"/>
 
     <!-- Bar 1: Frontier SOTA Baseline (0.0%) -->
-    <rect x="110" y="238" width="85" height="2" fill="#e11d48"/>
-    <text x="152" y="230" font-family="sans-serif" font-size="12" font-weight="700" fill="#e11d48" text-anchor="middle">0.0%</text>
-    <text x="152" y="260" font-family="sans-serif" font-size="11" font-weight="600" fill="#1e293b" text-anchor="middle">Frontier SOTA</text>
-    <text x="152" y="276" font-family="sans-serif" font-size="10" fill="#64748b" text-anchor="middle">(Claude / DeepSeek)</text>
+    <rect x="110" y="238" width="90" height="2" fill="#e11d48"/>
+    <text x="155" y="230" font-family="sans-serif" font-size="12" font-weight="700" fill="#e11d48" text-anchor="middle">0.0%</text>
+    <text x="155" y="260" font-family="sans-serif" font-size="11" font-weight="600" fill="#1e293b" text-anchor="middle">Frontier SOTA Baseline</text>
+    <text x="155" y="276" font-family="sans-serif" font-size="10" fill="#64748b" text-anchor="middle">(Claude 3.5 / DeepSeek-V3)</text>
 
-    <!-- Bar 2: Generic Humanize Prompt (8.7%) -->
-    <rect x="255" y="221" width="85" height="19" fill="#94a3b8"/>
-    <text x="297" y="213" font-family="sans-serif" font-size="12" font-weight="700" fill="#475569" text-anchor="middle">8.7%</text>
-    <text x="297" y="260" font-family="sans-serif" font-size="11" font-weight="600" fill="#1e293b" text-anchor="middle">Generic Prompt</text>
-    <text x="297" y="276" font-family="sans-serif" font-size="10" fill="#64748b" text-anchor="middle">("write like human")</text>
+    <!-- Bar 2: Generic Prompt (8.7%) -->
+    <rect x="265" y="221" width="90" height="19" fill="#94a3b8"/>
+    <text x="310" y="213" font-family="sans-serif" font-size="12" font-weight="700" fill="#475569" text-anchor="middle">8.7%</text>
+    <text x="310" y="260" font-family="sans-serif" font-size="11" font-weight="600" fill="#1e293b" text-anchor="middle">Generic Prompt</text>
+    <text x="310" y="276" font-family="sans-serif" font-size="10" fill="#64748b" text-anchor="middle">("write like human")</text>
 
     <!-- Bar 3: Word-Blacklist Heuristics (14.1%) -->
-    <rect x="400" y="209" width="85" height="31" fill="#64748b"/>
-    <text x="442" y="201" font-family="sans-serif" font-size="12" font-weight="700" fill="#475569" text-anchor="middle">14.1%</text>
-    <text x="442" y="260" font-family="sans-serif" font-size="11" font-weight="600" fill="#1e293b" text-anchor="middle">Word Blacklist</text>
-    <text x="442" y="276" font-family="sans-serif" font-size="10" fill="#64748b" text-anchor="middle">(Existing GitHub Repos)</text>
+    <rect x="420" y="209" width="90" height="31" fill="#64748b"/>
+    <text x="465" y="201" font-family="sans-serif" font-size="12" font-weight="700" fill="#475569" text-anchor="middle">14.1%</text>
+    <text x="465" y="260" font-family="sans-serif" font-size="11" font-weight="600" fill="#1e293b" text-anchor="middle">Word Blacklist</text>
+    <text x="465" y="276" font-family="sans-serif" font-size="10" fill="#64748b" text-anchor="middle">(Typical GitHub Repos)</text>
 
     <!-- Bar 4: Unslop Engine (94.8%) -->
-    <rect x="545" y="31" width="85" height="209" fill="#1d4ed8"/>
+    <rect x="575" y="31" width="90" height="209" fill="#1d4ed8"/>
     <!-- Confidence interval / error bar line on Bar 4 -->
-    <line x1="587" y1="20" x2="587" y2="42" stroke="#0f172a" stroke-width="1.5"/>
-    <line x1="577" y1="20" x2="597" y2="20" stroke="#0f172a" stroke-width="1.5"/>
-    <line x1="577" y1="42" x2="597" y2="42" stroke="#0f172a" stroke-width="1.5"/>
-    <text x="587" y="14" font-family="sans-serif" font-size="13" font-weight="800" fill="#1d4ed8" text-anchor="middle">94.8% ± 1.8%</text>
-    <text x="587" y="260" font-family="sans-serif" font-size="11" font-weight="700" fill="#1d4ed8" text-anchor="middle">Unslop Engine</text>
-    <text x="587" y="276" font-family="sans-serif" font-size="10" font-weight="600" fill="#1e40af" text-anchor="middle">(SAE + Cognitive + Linter)</text>
+    <line x1="620" y1="20" x2="620" y2="42" stroke="#0f172a" stroke-width="1.5"/>
+    <line x1="610" y1="20" x2="630" y2="20" stroke="#0f172a" stroke-width="1.5"/>
+    <line x1="610" y1="42" x2="630" y2="42" stroke="#0f172a" stroke-width="1.5"/>
+    <text x="620" y="14" font-family="sans-serif" font-size="13" font-weight="800" fill="#1d4ed8" text-anchor="middle">94.8% ± 1.8%</text>
+    <text x="620" y="260" font-family="sans-serif" font-size="11" font-weight="700" fill="#1d4ed8" text-anchor="middle">Unslop Engine</text>
+    <text x="620" y="276" font-family="sans-serif" font-size="10" font-weight="600" fill="#1e40af" text-anchor="middle">(SAE + Cognitive + Linter)</text>
   </g>
 </svg>
